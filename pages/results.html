@@ -1,0 +1,17 @@
+
+<p>
+    <a href="#/">Back to Search</a>
+</p>
+{{sorter}}
+<br>
+
+{{fin[0].title}}
+
+<br>
+
+<input ng-controller="jobsController" type="submit" value="Alert" class="btn btn-primary" ng-click= "disp()" />
+ 
+<div  ng-repeat="j in jobResults">
+		<display j="j"></display>
+</div>
+

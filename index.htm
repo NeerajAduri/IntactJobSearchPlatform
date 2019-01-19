@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="jobs">
+    <head>
+        <title>Job Search</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" />
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em !important;
+            }
+        </style>
+        
+        <!-- load angular via CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-resource.min.js"></script>
+        <script src="../JobSearch/js/app.js"></script>
+    </head>
+    
+    <body ng-controller="jobsController">
+    
+    <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+				    <a class="navbar-brand" href="/"></a>
+				<!--	<a class="navbar-brand" href="#/">Home</a>-->
+				</div>
+                
+                <ul class="nav navbar-nav navbar-left">
+                    <!--<li><a href="#/results"><i></i>Results</a></li>-->
+                </ul>
+			</div>
+			</nav>
+	</header>
+
+<div class="bodyContainer">
+
+            <div ng-view></div>
+            
+		</div>
+</body>
+</html>

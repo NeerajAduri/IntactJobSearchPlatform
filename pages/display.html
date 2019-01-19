@@ -1,0 +1,55 @@
+<div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+            <table datatable class="table table-hover table-bordered">
+			  <tbody>
+			 <!-- <thead class="thead-dark" ><th > {{ $index+1 }}
+			  </th> </thead>
+			  -->
+			    <tr>
+			      <th scope="row" width="30%">Job Title</th>
+			      <td width="70%">{{j.title}}</td>
+			    </tr>
+<!-- 			    <tr>
+			      <th scope="row" class="col-md-2">Job ID</th>
+			      <td class="col-md-10">{{j.id}}</td>
+			    </tr> -->
+			    <tr>
+			      <th scope="row" width="30%">Application URL</th>
+			      <td width="70%"><a target=”_blank” href={{j.url}}> click here to apply</a></td>
+			    </tr>
+			    <tr>
+			      <th scope="row" width="30%">Company</th>
+			      <td width="70%"> {{j.company}}</td>
+			    </tr>
+			    <tr>
+			      <th scope="row" width="30%">Location</th>
+			      <td width="70%">{{j.location}}</td>
+			    </tr>
+			    <tr>
+			      <th scope="row" width="30%">Job Summary</th>
+			      <td width="70%">{{j.summary}}</td>
+			    </tr>
+			    <tr>
+			      <th scope="row" width="30%">Posted date</th> 
+			      <td width="70%">{{j.date}}</td>
+			    </tr>
+			    <tr ng-hide = "j.source==null">
+			      <th scope="row" width="30%">Source</th>
+			      <td width="70%">{{j.source}}</td>
+			    </tr>
+			    <tr ng-hide = "j.ratings==null">
+			      <th scope="row" width="30%">Ratings</th>
+			      <td width="70%">{{j.ratings}}/5</td>
+			    </tr>
+<!-- 			    <tr>
+			      <th scope="row" class="col-md-2">Reviews</th>
+			      <td class="col-md-10">{{j.reviews}}</td>
+			    </tr> -->
+			  </tbody>
+			</table>
+			<br><br>
+			</div>
+        </div>
+    </div>
+    
